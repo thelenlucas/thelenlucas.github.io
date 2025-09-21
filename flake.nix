@@ -40,7 +40,8 @@
           ssgen ./markup.md index.html
         '';
         installPhase = ''
-          cp index.html $out
+          mkdir $out
+          cp index.html $out/index.html
         '';
       };
     };
